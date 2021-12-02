@@ -1,0 +1,36 @@
+{
+  "name": "profile_generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "cd server && npm start",
+    "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "heroku-postbuild": "cd client && npm run build",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickjamesridgway/profile_generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nickjamesridgway/profile_generator/issues"
+  },
+  "homepage": "https://github.com/nickjamesridgway/profile_generator#readme",
+  "devDependencies": {
+    "concurrently": "^6.4.0"
+  },
+  "dependencies": {
+    "@apollo/react-hooks": "^4.0.0",
+    "apollo-boost": "^0.4.9",
+    "graphql": "^16.0.1",
+    "graphql-tag": "^2.12.6",
+    "if-env": "^1.0.4"
+  }
+}
