@@ -14,7 +14,8 @@ npm start
 A portfolio generator that combines a scalable MongoDB back end, a GraphQL API, and an Express.js and Node.js server with a React front end.
 # Usage
 It still has a tails error but here is the 
-[Heroku Link.](https://dreamwithin.us/employee_management_system.mp4)
+[Click here for the Heroku Live Link.](https://desolate-shelf-86195.herokuapp.com/)
+https://git.heroku.com/desolate-shelf-86195.git
 # Questions
 If you have any questions, please e-mail me at nickjamesridgway@gmail.com.
 # Credits
