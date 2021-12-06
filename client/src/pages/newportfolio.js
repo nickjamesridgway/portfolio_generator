@@ -12,7 +12,7 @@ const CreatePortfolio = () => {
     return (
         <>
             <Container>
-                <h1>Enter information:</h1>
+                <h3>Enter information:</h3>
                 <Form onSubmit={handleformsubmit}>
 
                 </Form>
